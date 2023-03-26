@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player Neumorphism</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="https://kit.fontawesome.com/b7c0369898.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+   <div class="container">
+      <div class="player">
+        <div class="player__controls">
+          <div class="player__btn player__btn--small">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <h5 class="player__title">Playing now</h5>
+          <div class="player__btn player__btn--small">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+          <div class="player__album">
+            <img src="./assets/images/ed-sheeran-bad-habits.jpg" alt="" class="player__img">
+          </div>
+        
+          <h2 class="player__artist">Ed Sheeran</h2>
+          <h3 class="player__song">Bad Habits</h3>
+
+          <input type="range" value="20" min="0" class="player__level">
+
+          <div class="audio-duration">
+            <div class="start">00:01</div>
+            <div class="end">04:30</div>
+          </div>
+
+          <audio class="player__audio" controls id="audio">
+            <source src="assets/media/ed-sheeran-bad-habits.mp3" type="audio/mpeg">
+          </audio>
+          
+          <div class="player__controls">
+            <div class="player__btn player__btn--medium">
+              <i class="fas fa-backward"></i>
+            </div>
+            <div class="player__btn player__btn--medium blue" id="play">
+              <i class="bi bi-play-fill play-btn player__icon"></i>
+              <i class="bi bi-pause-fill pause-btn player__icon hide"></i>
+            </div>
+            <div class="player__btn player__btn--medium">
+              <i class="fas fa-forward"></i>
+            </div>
+          </div>
+          
+      </div>
+  </div>
+  <script src="./JS/main.js"></script>
+</body>
+</html>
